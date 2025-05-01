@@ -10,7 +10,7 @@ function getSuhuRealTime() {
     $result = pg_query($conn, $query);
 
     if (!$result) {
-        return null; // Query gagal
+        return null; // Query gagal 
     }
 
     // Ambil data suhu terakhir 
