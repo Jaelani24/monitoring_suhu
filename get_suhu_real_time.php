@@ -6,7 +6,7 @@ include('koneksi.php');
 function getSuhuRealTime() {
     global $conn;
 
-    $query = "SELECT suhu FROM logs ORDER BY waktu DESC LIMIT 1"; 
+    $query = "SELECT no, suhu FROM logs ORDER BY no DESC LIMIT 1"; 
     $result = pg_query($conn, $query);
 
     if (!$result) {
