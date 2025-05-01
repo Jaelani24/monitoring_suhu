@@ -13,7 +13,7 @@ function getSuhuRealTime() {
         return null; // Query gagal
     }
 
-    // Ambil data suhu terakhir
+    // Ambil data suhu terakhir 
     $row = pg_fetch_assoc($result);
     if ($row) {
         return $row['suhu'];
